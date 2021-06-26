@@ -4,3 +4,4 @@ go.sum
 go.mod
 config.ini
 webapp.log
+webapp.sql

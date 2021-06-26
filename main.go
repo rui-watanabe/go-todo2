@@ -2,15 +2,19 @@ package main
 
 import (
 	"fmt"
-	"log"
-	"todo/config"
+	"todo/app/models"
 )
 
-func main() {
-	fmt.Println(config.Config.Port)
-	fmt.Println(config.Config.LogFile)
-	fmt.Println(config.Config.SQLDriver)
-	fmt.Println(config.Config.DbName)
+// "fmt"
+// "log"
+// "todo/config"
 
-	log.Println("test")
+func main() {
+	// fmt.Println(config.Config.Port)
+	// fmt.Println(config.Config.LogFile)
+	// fmt.Println(config.Config.SQLDriver)
+	// fmt.Println(config.Config.DbName)
+
+	// log.Println("test")
+	fmt.Println(models.Db)
 }
