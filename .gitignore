@@ -3,3 +3,4 @@ hello
 go.sum
 go.mod
 config.ini
+webapp.log
