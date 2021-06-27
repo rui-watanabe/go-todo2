@@ -60,6 +60,6 @@ func main() {
 	// }
 
 	t, _ := models.GetTodo(4)
-	t.Content = "fourth todo"
-	t.UpdateTodo()
+	// t.Content = "fourth todo"
+	t.DeleteTodo()
 }
