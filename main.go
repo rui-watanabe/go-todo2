@@ -30,9 +30,13 @@ func main() {
 
 	fmt.Println(u)
 
-	u.Name = "test2"
-	u.Email = "test2@gmail.com"
+	u.Name = "test"
+	u.Email = "test@gmail.com"
 	u.UpdateUser()
+	u, _ = models.GetUser(1)
+	fmt.Println(u)
+
+	u.DeleteUser()
 	u, _ = models.GetUser(1)
 	fmt.Println(u)
 }
