@@ -16,27 +16,27 @@ func main() {
 	// fmt.Println(config.Config.DbName)
 
 	// log.Println("test")
-	// fmt.Println(models.Db)
+	fmt.Println(models.Db)
 
-	// u := &models.User{}
-	// u.Name = "test"
-	// u.Email = "test@gmail.com"
-	// u.Password = "testtest"
-
-	// fmt.Println(u)
-
-	// u.CreateUser()
-	u, _ := models.GetUser(1)
-
-	fmt.Println(u)
-
+	u := &models.User{}
 	u.Name = "test"
 	u.Email = "test@gmail.com"
-	u.UpdateUser()
-	u, _ = models.GetUser(1)
+	u.Password = "testtest"
+
 	fmt.Println(u)
 
-	u.DeleteUser()
-	u, _ = models.GetUser(1)
-	fmt.Println(u)
+	u.CreateUser()
+	user, _ := models.GetUser(2)
+	user.CreateTodo("first todo")
+	fmt.Println(user)
+
+	// u.Name = "test"
+	// u.Email = "test@gmail.com"
+	// u.UpdateUser()
+	// u, _ = models.GetUser(1)
+	// fmt.Println(u)
+
+	// u.DeleteUser()
+	// u, _ = models.GetUser(1)
+	// fmt.Println(u)
 }
