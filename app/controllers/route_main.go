@@ -5,5 +5,5 @@ import (
 )
 
 func top(w http.ResponseWriter, r *http.Request) {
-	generateHtml(w, "hello", "layout", "top")
+	generateHtml(w, "hello", "layout", "public_navbar", "top")
 }
