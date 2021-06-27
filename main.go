@@ -16,14 +16,17 @@ func main() {
 	// fmt.Println(config.Config.DbName)
 
 	// log.Println("test")
-	fmt.Println(models.Db)
+	// fmt.Println(models.Db)
 
-	u := &models.User{}
-	u.Name = "test"
-	u.Email = "test@gmail.com"
-	u.Password = "testtest"
+	// u := &models.User{}
+	// u.Name = "test"
+	// u.Email = "test@gmail.com"
+	// u.Password = "testtest"
+
+	// fmt.Println(u)
+
+	// u.CreateUser()
+	u, _ := models.GetUser(1)
 
 	fmt.Println(u)
-
-	u.CreateUser()
 }
