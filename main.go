@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"todo/app/controllers"
+	// "todo/app/controllers"
 	"todo/app/models"
 )
 
@@ -13,5 +13,7 @@ import (
 func main() {
 	fmt.Println(models.Db)
 
-	controllers.StartMainServer()
+	// controllers.StartMainServer()
+	user, _ := models.GetUserByEmail("test@gmail.com")
+	fmt.Println(user)
 }
